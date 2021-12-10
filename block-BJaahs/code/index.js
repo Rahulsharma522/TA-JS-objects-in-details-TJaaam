@@ -3,7 +3,7 @@ let options = ["Tashkent", "Amaan", "Kuwait City", "Nairobi"];
 let correctAnswerIndex = 1;
 
 function isAnwserCorrect(index) {
-  return index === correctAnswerIndex;
+  return index ===correctAnswerIndex;
 }
 function getCorrectAnwser() {
   return options[correctAnswerIndex];
