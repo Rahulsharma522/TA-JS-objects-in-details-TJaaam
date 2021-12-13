@@ -3,12 +3,68 @@
 - Create a class named `Square` which accepts one parameter `side` and will set two property `width` and `height` to the value of `side`.
 
 - Add a method name `description` that will alert a message saying `The square is ${width} x ${height}`
+```js
+class square {
+    constructor (side){
+        this.side = side;
+    }
+    description(){
+        alert(`The square is ${width} x ${height}`)
+    }
+}
 
 - Create a method inside the class named `calcArea` that will return the area of the square.
+```js
+class square {
+    constructor (side){
+        this.side = side;
+    }
+    description(){
+        alert(`The square is ${width} x ${height}`)
+    }
+    calcArea(){
+        return this.width * this.height
+    }
+}
 
 - Create a `area` getter method using which we can get the area of the square.
 
+class square {
+    constructor (side){
+        this.side = side;
+    }
+    description(){
+        alert(`The square is ${width} x ${height}`)
+    }
+    calcArea(){
+        return this.width * this.height
+    }
+   get area(){
+        return this.width * this.height
+    }
+}
+
 - Create a `area` setter method that will accept the area of the square. Based on the value of area it will set the value of `width` and `height`.
+``js
+class square {
+    constructor (side){
+        this.side = side;
+    }
+    description(){
+        alert(`The square is ${width} x ${height}`)
+    }
+    calcArea(){
+        return this.width * this.height
+    }
+   get area(){
+        return this.width * this.height
+    }
+    set area(value){
+        let side = Math.sqrt(value);
+        this.width = side;
+        this.heigth = side;
+    }
+}
 
 - Create a static method named `isEqual` which accepts two `square` object with `width` and `height` property. If the area of both square is same it will return `true` or `false`.
 
