@@ -23,6 +23,7 @@ let capitalWords = words
 console.log(doubleNum); // it should be [1, 9, 11, 15, 17]
 console.log(capitalWords); // it should be 'Quick Brown Fox Jumped Over A Lazy Dog'
 
+
 /*
 2. Add a method named `myFilter` to Array.prototype. myFilter should behave similar to Array.filter.
 After adding the function test it using the code below.
@@ -82,7 +83,7 @@ array that will contain only element that is common in both the array.
 // Test to check the shuffle method (It will return different output every time you call)
 console.log(num.intersection([2, 7, 11, 32])); // [2, 7]
 console.log(strings.intersection('heyworld'.split(''))); // ['h', 'e', 'o', 'w', 'r', 'l', 'd']
-
+console.log(strings.intersection('hey');
 /*
 6. Add a method named `chunk` to Array.prototype. The method chunk will accept one parameter `length`
 and split the array into groups the length of size. If array can't be split evenly, the final
@@ -93,5 +94,5 @@ chunk will be the remaining elements. `length` should default to 1.
 
 // Test to check the shuffle method (It will return different output every time you call)
 console.log(num.chunk(2)); // [[1, 2], [3, 4], [2, 3], [6, 7], [7]]
-console.log(num.chunk()); // [[1], [2], [3], [4], [2], [3], [6], [7], [7]]
+console.log(num.chunk()); //  [1], [2], [3], [4], [2], [3], [6], [7], [7]]
 console.log(strings.chunk(3)); // [['h', 'e', 'l'], ['l', 'o', 'w'], ['o', 'r', 'l'], ['d']]
