@@ -9,8 +9,8 @@ let aboutAnimal ={
     summary: function(){
 console.log(`I live in ${this.location} and I have ${this.numberOfLegs}`);
     }
-}
-function animal(location , numberOfLegs){
+};
+function animal(location ,numberOfLegs){
 
 let animals = Object.create(aboutAnimal)
 animals.location = location;
